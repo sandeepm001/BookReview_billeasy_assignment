@@ -25,7 +25,7 @@ const getAllBooks = async (req, res, next) => {
 	//case in sensitive search also partial search
     if (author) filter.author = new RegExp(author, 'i'); 
     if (genre) filter.genre = new RegExp(genre, 'i');
-	if (title) filter.title = new RegExp(title, 'i');
+	if (title) filter.title = new RegExp(title, 'i');//title
 
     const books = await Book.find(filter)
       .skip((page - 1) * limit)
