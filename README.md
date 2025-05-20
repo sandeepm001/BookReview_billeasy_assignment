@@ -48,3 +48,10 @@ Link : https://drive.google.com/file/d/1FpRT5OoOcOuOyNgUtz4lgov5F0aH7uv2/view?us
 - **routes/** handles URL endpoints,
 - **controllers/** contains the logic for each route,
 - **models/** defines your data structure and database schema.
+## Database schemas
+
+- the data base schema is of three models using mongoose and mongodb
+- user model (for user info like name,email,password)
+- book model (title ,author,genre etc...)
+- review model (review,rating)
+- The review model if connected to book and user model by ref
